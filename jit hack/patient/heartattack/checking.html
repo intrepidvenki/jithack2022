@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\venki\Desktop\jit hack\patient\heartattack\checking.css">
+    <title>decting heartattack</title>
+</head>
+<body>
+    enter the low end heart zone<br><input type="text" id="num2">
+    <br>
+    <br>
+    <!--enter the high end heart zone<br><input type="text" id="num3"-->
+    <br>
+    <br>
+    <br><br><button onclick="checkheart()">check heart</button>
+    </center>
+</body>
+</html>
+<script>
+    function checkheart()
+    {
+        minPer = document.getElementById("num2").value;
+        console.log(minPer);
+        if(minper < 90){
+            alert('U are feeling a low blood pressure please rush to hospital and take the madicine med X')
+        }
+        elseif(minper>150)
+        {
+            
+        }
+    }
+</script>

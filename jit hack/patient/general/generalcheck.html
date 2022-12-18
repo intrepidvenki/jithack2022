@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\venki\Desktop\jit hack\patient\general\generalcheck.css">
+    <title>general checkup</title>
+</head>
+<body>
+    <center><h1>General check</h1>
+        <br>
+        <br>
+        running nose: <input type="checkbox" id="myCheck">
+        <br>
+        <br>
+        headache: <input type="checkbox" id="myCheck1">
+        <br>
+        <br>
+        body pain: <input type="checkbox" id="myCheck2">
+        <br>
+        <br>
+        high temperatures: <input type="checkbox" id="myCheck3">
+        <br>
+        <br>
+        <button onclick="myFunction()">Click me</button>
+    </center>
+</body>
+</html>
+<script>
+    function myFunction(){
+    var checkBox = document.getElementById("myCheck");
+    var checkBox1 = document.getElementById("myCheck1");
+    var checkBox2 = document.getElementById("myCheck2");
+    var checkBox3 = document.getElementById("myCheck3");
+    if(checkBox.checked && checkBox1.checked && checkBox2.checked && checkBox3.checked == true)
+    {
+        alert('you are feeling fever\n  please take the medacine A \n take a 2 days of bed rest')
+    }
+    else if(checkBox.checked && checkBox1.checked && checkBox2.checked == true)
+    {
+        alert('you are feeling mild fever\n  please take the medacine B \n take a 1 days of bed rest')
+    }
+    else if(checkBox.checked && checkBox1.checked == true)
+    {
+        alert('you are feeling cold\n  please take the medacine C \n take a 1 days of bed rest')
+    }
+    else if(checkBox.checked == true){
+        alert('you have a running nose please take medicine D')
+    }
+    else if(checkBox1.checked == true){
+        alert('you have a headache please take medicine E')
+    }
+    else if(checkBox2.checked == true){
+        alert('you have a body pain please take medicine F')
+    }
+    else if(checkBox3.checked == true){
+        alert('you have a high temperatre please take medicine G and take a bed rest of a day')
+    }
+}
+</script>
